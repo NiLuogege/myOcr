@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_200"
+        android:background="@drawable/menu_pop_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_5">
+
+        <TextView
+            android:id="@+id/add_jzw_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pop_main_bg"
+            android:gravity="center"
+            android:text="添加建筑物"
+            android:textColor="@color/blark"
+            android:textSize="@dimen/sp_15" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@color/colors_font8"></View>
+
+        <TextView
+            android:id="@+id/desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pop_main_bg"
+            android:gravity="center"
+            android:text="升序建筑物"
+            android:textColor="@color/blark"
+            android:textSize="@dimen/sp_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@color/colors_font8"></View>
+
+        <TextView
+            android:id="@+id/dsc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pop_main_bg"
+            android:gravity="center"
+            android:text="降序建筑物"
+            android:textColor="@color/blark"
+            android:textSize="@dimen/sp_15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@color/colors_font8"></View>
+
+        <TextView
+            android:id="@+id/screen_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pop_main_bg"
+            android:gravity="center"
+            android:text="筛选空建筑物"
+            android:textColor="@color/blark"
+            android:textSize="@dimen/sp_15" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

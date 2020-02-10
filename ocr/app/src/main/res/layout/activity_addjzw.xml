@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/jzw"
+        layout="@layout/base_toobar_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:text="*"
+                    android:textColor="@color/edit_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建筑物名称"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+                <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                    android:id="@+id/addjzw_name_el"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/qingchusan"
+                    android:hint="输入建筑物名称"
+                    android:padding="5dp"
+                    android:textColor="@color/colors_font6"
+                    android:textSize="@dimen/sp_15" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/li1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="#e5e6e7e8">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:text="*"
+                    android:textColor="@color/edit_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单元数"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+                <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                    android:id="@+id/addjzw_danyun_el"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/qingchusan"
+                    android:hint="输入建筑物下的单元数"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/colors_font6"
+                    android:textSize="@dimen/sp_15" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/li1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="#e5e6e7e8">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:text="*"
+                    android:textColor="@color/edit_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="楼层数"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+                <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                    android:id="@+id/addjzw_ceng_el"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/qingchusan"
+                    android:hint="输入单元下的楼层数"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/colors_font6"
+                    android:textSize="@dimen/sp_15" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/li1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="#e5e6e7e8">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:text="*"
+                    android:textColor="@color/edit_yes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房屋数"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+                <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                    android:id="@+id/addjzw_fw_el"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:drawableRight="@drawable/qingchusan"
+                    android:hint="输入层下的房屋数"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/colors_font6"
+                    android:textSize="@dimen/sp_15" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/commit_im_addjzw"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button_selector"
+                android:text="确 定"
+                android:textColor="@color/colors_fontWhite"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

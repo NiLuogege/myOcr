@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tit2"
+        layout="@layout/base_toobar_layout" />
+
+    <include
+        android:id="@+id/data_base_net"
+        layout="@layout/base_network_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></include>
+
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colors_fontWhite">
+
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp_5"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/colors_font3"
+            android:textSize="@dimen/sp_13" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colors_fontWhite">
+
+        <!--<com.example.ruifight_3.saolouruifight.widget.PieView-->
+        <!--android:id="@+id/pieview_tuxing"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_180" />-->
+
+        <com.razerdp.widget.animatedpieview.AnimatedPieView
+            android:id="@+id/anima_picview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/personne_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anima_picview"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:background="@color/colors_fontWhite"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp_5"
+            android:text="人员性质分布百分比"
+            android:textColor="#7782e3"
+            android:textSize="@dimen/sp_13"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

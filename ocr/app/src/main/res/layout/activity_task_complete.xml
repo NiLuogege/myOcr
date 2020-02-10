@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/base_toobar_layout"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/libear"
+        android:clipChildren="false"
+        android:layerType="software"
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+        <!--<android.support.v4.view.ViewPager-->
+
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:clipChildren="false"-->
+            <!--&gt;-->
+        <!--</android.support.v4.view.ViewPager>-->
+        <com.youth.banner.Banner
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            app:banner_default_image="@drawable/wutupian"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvs"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colors_font2A"
+            android:textSize="16sp"
+            android:text="关注原因"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:paddingTop="5dp"
+            android:gravity="top"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="16sp"
+            android:id="@+id/task_tv_miaoshu"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line_et_bg"
+            android:layout_toRightOf="@+id/tvs"
+            android:layout_width="match_parent"
+            android:layout_height="66dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvsS"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colors_font2A"
+            android:textSize="16sp"
+            android:text="对此描述"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:paddingTop="5dp"
+            android:gravity="top"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="16sp"
+            android:id="@+id/task_tv_shuoming"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line_et_bg"
+            android:layout_toRightOf="@+id/tvsS"
+            android:layout_width="match_parent"
+            android:layout_height="66dp" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

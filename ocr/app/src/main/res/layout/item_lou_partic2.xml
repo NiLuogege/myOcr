@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/_item_tou"
+            android:layout_width="@dimen/dp_89"
+            android:layout_height="@dimen/dp_95"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_15"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/_item_tou"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名： "
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:text="性别： "
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:text="手机号： "
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/idcard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:text="身份证号： "
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/renkou_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="姓名： 任浩楠"
+                android:textColor="@color/colors_font2A"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/danwei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="姓名： 任浩楠"
+                android:textColor="@color/colors_font2A"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15">
+
+
+            <ImageView
+                android:id="@+id/delete_tv"
+                android:layout_width="@dimen/dp_17"
+                android:layout_height="@dimen/dp_16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@mipmap/delete"
+                android:padding="2dp" />
+
+
+            <ImageView
+                android:id="@+id/bianji_tv"
+                android:layout_width="@dimen/dp_17"
+                android:layout_height="@dimen/dp_16"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_40"
+                android:background="@mipmap/bianji"
+                android:padding="2dp" />
+
+
+            <TextView
+                android:id="@+id/time_itme_lou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delete_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textColor="@color/colors_font6"
+                android:textSize="@dimen/sp_12" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="10dp"
+        android:background="#e5e6e7e8"></View>
+
+</LinearLayout>

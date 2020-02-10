@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/base_activity"
+        layout="@layout/base_toobar_layout"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/zhanghao_res"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/update_ims"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@mipmap/user" />
+
+
+                <TextView
+                    android:id="@+id/user_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/update_ims"
+                    android:text="登录账号"
+                    android:textColor="@color/edit_yes"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/user_tvs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/edit_yes"
+                    android:textSize="@dimen/sp_16" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+            <RelativeLayout
+                android:id="@+id/recome_huancuisize"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+
+                <ImageView
+                    android:id="@+id/deleteicon"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/qingchuhuanchun" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/deleteicon"
+                    android:text="清除离线文件"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/huancui_sizez_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/colors_font2A"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deleteicon"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="只清除登录账号离线文件"
+                    android:textSize="@dimen/sp_9" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+            <RelativeLayout
+                android:id="@+id/recome_huancui"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/qingchu"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/deleteicon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/qingchu"
+                    android:text="清除缓存"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/huancui_sizez"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/colors_font2A"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/updae_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/updae_image"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/update" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/updae_image"
+                    android:text="离线采集未上传"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:id="@+id/updae_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/colors_font2A"
+                    android:textSize="@dimen/sp_16" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/updae_item4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/ocr_image"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/ocr" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/ocr_image"
+                    android:text="关闭离线ocr"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ocr_image"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="关闭后默认开启在线ocr(需要网络)"
+                    android:textSize="@dimen/sp_9" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_setactivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:theme="@style/MySwitch" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+            <RelativeLayout
+                android:id="@+id/updae_item5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/ocr_images"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/zidong" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/ocr_images"
+                    android:text="开启自动转换ocr"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ocr_images"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="开启后跟随网络自动切换ocr(建议关闭)"
+                    android:textSize="@dimen/sp_9" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_setactivitys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:theme="@style/MySwitch" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+            <RelativeLayout
+                android:id="@+id/updae_item6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/tainqi_images"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/tianqi" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/tainqi_images"
+                    android:text="关闭首页天气"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_setactivitys_tianqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:theme="@style/MySwitch" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/address_guolv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/address_guolv_image"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/guolv" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/address_guolv_image"
+                    android:text="设置户籍地址"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/address_guolv_image"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="点击设置户籍地址"
+                    android:textSize="@dimen/sp_9" />
+
+
+                <TextView
+                    android:id="@+id/dangqian_tv_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textColor="@color/colors_font2A"
+                    android:textSize="@dimen/sp_16" />
+
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/colors_bg"></View>
+
+
+            <RelativeLayout
+                android:id="@+id/update_re"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/setback">
+
+                <ImageView
+                    android:id="@+id/update_im"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/jiance" />
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/update_im"
+                    android:text="检测更新版本"
+                    android:textColor="@color/colors_font3"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <ImageView
+                    android:id="@+id/hongdian_im_set"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_toRightOf="@+id/tv"
+                    android:background="@drawable/xiaoxidian"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/versionname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textSize="@dimen/sp_13" />
+
+
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/guanyu_home"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dp_50"-->
+            <!--android:background="@drawable/setback">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/updae_imagese"-->
+            <!--android:layout_width="@dimen/dp_20"-->
+            <!--android:layout_height="@dimen/dp_20"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/dp_5"-->
+            <!--android:background="@drawable/guanyuhome" />-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/dp_5"-->
+            <!--android:layout_toRightOf="@+id/updae_imagese"-->
+            <!--android:text="关于我们"-->
+            <!--android:textColor="@color/colors_font2A"-->
+            <!--android:textSize="@dimen/sp_16" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_marginLeft="@dimen/dp_10"-->
+            <!--android:layout_marginRight="@dimen/dp_10"-->
+            <!--android:background="@color/colors_bg"></View>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

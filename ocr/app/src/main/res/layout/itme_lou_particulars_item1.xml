@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_16"
+    android:layout_marginRight="@dimen/dp_10"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_92"
+        android:background="@drawable/jiaojiao"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/mess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="房主信息:"
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/fz_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/mess"
+                android:text=""
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_16" />
+
+
+            <TextView
+                android:id="@+id/fz_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@+id/fz_name"
+                android:text=""
+                android:textColor="@color/colors_font6"
+                android:textSize="@dimen/sp_16" />
+
+
+            <ImageView
+                android:id="@+id/fangzhu_commit_button"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_24"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/bianji"
+                android:text="保存" />
+
+        </RelativeLayout>
+
+        <!--<View-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:background="#666666"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"></View>-->
+
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/item_lou_cycleview1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--</android.support.v7.widget.RecyclerView>-->
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/main_sousuo_cet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/lou_yuan"
+        android:hint="输入建筑物名称"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_70"
+        android:textColor="@color/colors_font2A"
+        android:textColorHint="#87999999"
+        android:textSize="@dimen/sp_15" />
+
+    <Button
+        android:id="@+id/sousuo_button"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@drawable/login_button_selector"
+        android:text="搜 索"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_12" />
+
+</RelativeLayout>

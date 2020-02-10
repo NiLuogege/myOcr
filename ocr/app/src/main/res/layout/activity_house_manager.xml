@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/hose"
+        layout="@layout/base_toobar_layout"></include>
+
+
+    <include
+        android:id="@+id/base_net"
+        layout="@layout/base_network_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hose" />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/base_net">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@android:color/transparent"
+                app:expandedTitleGravity="top"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:id="@+id/rela"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/base_net"
+                    android:background="@color/colors_fontWhite">
+
+
+                    <TextView
+                        android:id="@+id/title_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/dp_5"
+                        android:padding="@dimen/dp_10"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </RelativeLayout>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/colors_fontWhite"
+                app:tabIndicatorColor="@color/edit_yes"
+                app:tabIndicatorHeight="3dp"
+                app:tabSelectedTextColor="@color/edit_yes"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="#999999">
+
+            </android.support.design.widget.TabLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colors_fontWhite">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:id="@+id/no_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="无单元信息"
+                android:textSize="@dimen/sp_15"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--<com.chanven.lib.cptr.PtrClassicFrameLayout-->
+    <!--android:id="@+id/ptrClassicFrameLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/rela"-->
+    <!--android:layout_marginTop="5dp">-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/house_recycview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+
+    <!--</com.chanven.lib.cptr.PtrClassicFrameLayout>-->
+
+</LinearLayout>

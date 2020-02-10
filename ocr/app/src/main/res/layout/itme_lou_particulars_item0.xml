@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:background="@color/colors_fontWhite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colors_font2A"
+            android:textSize="16sp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="房屋用途"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:id="@+id/item0_radiobutton_zizhu"
+                android:layout_weight="1"
+                android:text="自住"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/item0_radiobutton_zuzhu"
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:layout_weight="1"
+                android:text="租住"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/item0_radiobutton_xianzhi"
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:layout_weight="1"
+                android:text="闲置"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:id="@+id/item0_radiobutton_kufang"
+                android:layout_weight="1"
+                android:text="库房"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colors_fontWhite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colors_font2A"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="房屋类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/item0_radiobutton_zhuzhai"
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:layout_weight="1"
+                android:text="住宅"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/item0_radiobutton_shangye"
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:layout_weight="1"
+                android:text="商业"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <RadioButton
+                android:id="@+id/item0_radiobutton_bangong"
+                android:padding="5dp"
+                android:button="@drawable/radiobutton_selector"
+                android:layout_weight="1"
+                android:text="办公"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

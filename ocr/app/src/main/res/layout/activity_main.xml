@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/jl"
+        layout="@layout/base_toobar_layout"></include>
+
+
+    <include
+        android:id="@+id/base_net"
+        layout="@layout/base_network_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jl"></include>
+
+    <include
+        android:id="@+id/suosuo"
+        layout="@layout/sousuo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/base_net"></include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/main_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/suosuo">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_bringinto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.example.ruifight_3.saolouruifight.widget.DragFloatActionButton
+        android:id="@+id/drag_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:src="@drawable/zhidinga"
+        app:backgroundTint="@color/edit_yes"
+        app:elevation="@dimen/dp_5"
+        app:fabSize="mini" />
+
+
+</RelativeLayout>

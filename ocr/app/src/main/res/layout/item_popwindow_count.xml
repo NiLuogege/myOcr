@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_250"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ec"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_150"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_corner">
+
+        <TextView
+            android:id="@+id/guanbi_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_5"
+            android:text="关闭"
+            android:textColor="@color/colors_fontDarkBlue"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/danyuan_tv_count"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+
+        <LinearLayout
+            android:id="@+id/la1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/danyuan_tv_count"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="修改房间号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <EditText
+                android:id="@+id/et_danyuan_ceng_count"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/endit_add"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dp_5"
+                android:textColor="@color/blark" />
+
+
+            <Button
+                android:id="@+id/ceng_button_count"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/delete_button_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/endit_add"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="删除202房间" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

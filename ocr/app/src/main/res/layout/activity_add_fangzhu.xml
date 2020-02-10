@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:backgroundSelector="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <include layout="@layout/base_toobar_layout"></include>
+
+    <include
+        android:id="@+id/base_net"
+        layout="@layout/base_network_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/colors_fontWhite">
+
+                <LinearLayout
+                    android:id="@+id/li1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="房主姓名"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                        android:id="@+id/lou_name_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/qingchusan"
+                        android:hint="请输入姓名"
+                        android:padding="5dp"
+                        android:textColor="@color/colors_font6"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+
+                <LinearLayout
+                    android:id="@+id/li2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                        android:id="@+id/lou_cardnumber_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/qingchusan"
+                        android:hint="请输入手机号/座机号"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/colors_font6"
+                        android:textSize="@dimen/sp_13"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li2"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/li3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li2"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="证件号码"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                        android:id="@+id/lou_phone_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/qingchusan"
+                        android:hint="请输入身份证号"
+                        android:padding="5dp"
+                        android:textColor="@color/colors_font6"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li3"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/li4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li3"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="房屋类型"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/nice_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:padding="@dimen/dp_5"
+                        android:text="请选择"
+                        android:textSize="@dimen/sp_13"
+                        app:textTint="@color/colors_font6"
+                        backgroundSelector:arrowDrawable="@drawable/arrow1" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li4"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+
+                <LinearLayout
+                    android:id="@+id/li5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li4"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="户籍地址"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+
+                    <org.angmarch.views.NiceSpinner
+                        android:id="@+id/address_nicSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:padding="@dimen/dp_5"
+                        android:text="请选择"
+                        android:textSize="@dimen/sp_13"
+                        app:textTint="@color/colors_font6"
+                        backgroundSelector:arrowDrawable="@drawable/arrow9" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li5"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/li8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li5"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="房主添加范围"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <RadioGroup
+                        android:id="@+id/add_gr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/add_hu_ra"
+                            android:layout_width="@dimen/dp_60"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_add_fangzhu"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="本 户"
+                            android:textColor="@color/colors_font3"
+                            android:textSize="@dimen/sp_13" />
+
+                        <RadioButton
+                            android:id="@+id/add_ceng_ra"
+                            android:layout_width="@dimen/dp_60"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_add_fangzhu"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="本 层"
+                            android:textColor="@color/colors_font3"
+                            android:textSize="@dimen/sp_13" />
+
+                        <RadioButton
+                            android:id="@+id/add_danyuan_ra"
+                            android:layout_width="@dimen/dp_60"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/radio_add_fangzhu"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="本单元"
+                            android:textColor="@color/colors_font3"
+                            android:textSize="@dimen/sp_13" />
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li8"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/li13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li8"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否允许该房主登录"
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_setactivitys_islogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:theme="@style/MySwitch" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/li13"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="#e5e6e7e8">
+
+                </View>
+
+
+                <LinearLayout
+                    android:id="@+id/li6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@+id/li13"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_3"
+                        android:text="*"
+                        android:textColor="@color/edit_yes"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注         "
+                        android:textColor="@color/colors_font3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.example.ruifight_3.saolouruifight.widget.ClearEditText
+                        android:id="@+id/beizhu_ce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@null"
+                        android:drawableRight="@drawable/qingchusan"
+                        android:hint="请输入备注内容"
+                        android:padding="5dp"
+                        android:textColor="@color/colors_font6"
+                        android:textSize="@dimen/sp_13" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/commit_im"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button_selector"
+                android:text="确 定"
+                android:textColor="@color/colors_fontWhite"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

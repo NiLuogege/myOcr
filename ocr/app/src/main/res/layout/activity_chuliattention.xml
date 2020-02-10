@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+
+
+    <include layout="@layout/base_toobar_layout"></include>
+
+
+   <!--<RelativeLayout-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="50dp">-->
+
+       <!--<TextView-->
+           <!--android:id="@+id/tv"-->
+           <!--android:layout_centerInParent="true"-->
+           <!--android:textSize="16sp"-->
+           <!--android:textColor="@color/colors_font2A"-->
+           <!--android:text="填写关注任务描述"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="wrap_content" />-->
+
+   <!--</RelativeLayout>-->
+
+    <View
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbarStyle="outsideOverlay"
+                    app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                    app:spanCount="4"
+                   />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:background="@color/colors_fontWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvs"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colors_font34"
+                    android:textSize="@dimen/sp_16"
+                    android:text="关注原因"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:paddingTop="5dp"
+                    android:gravity="top"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:hint="请输入原因"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:id="@+id/chuli_attention_guanzhu_ed"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/line_et_bg"
+                    android:layout_width="@dimen/dp_217"
+                    android:layout_height="@dimen/dp_123" />
+
+
+                <TextView
+                    android:textColor="@color/colors_font6"
+                    android:text="0/30"
+                    android:id="@+id/yuanyin_tv_size"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@color/colors_fontWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvss"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colors_font34"
+                    android:textSize="@dimen/sp_16"
+                    android:text="对此描述"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:paddingTop="5dp"
+                    android:gravity="top"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    android:hint="请输入描述"
+                    android:id="@+id/chuli_attention_miaoshu_ed"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:background="@drawable/line_et_bg"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/dp_217"
+                    android:layout_height="@dimen/dp_123"/>
+
+
+                <TextView
+                    android:textColor="@color/colors_font6"
+                    android:text="0/30"
+                    android:id="@+id/miaoshu_tv_size"
+                    android:layout_marginRight="@dimen/dp_13"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/chuli_attention_commit_ed"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/login_button_selector"
+                android:gravity="center"
+                android:text="确 定"
+                android:textColor="@color/colors_fontWhite"
+                android:textSize="14sp" />
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

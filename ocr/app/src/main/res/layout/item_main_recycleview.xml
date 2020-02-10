@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/lou_yuan">
+
+
+        <TextView
+            android:id="@+id/renkou_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:textColor="@color/colors_font6"
+            android:textSize="@dimen/sp_10" />
+
+        <ImageView
+            android:id="@+id/main_recycle_item_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/renkou_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@mipmap/lou" />
+
+        <com.example.ruifight_3.saolouruifight.widget.MarqueTextView
+            android:id="@+id/main_recycle_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_recycle_item_im"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/colors_font6"
+            android:textSize="@dimen/sp_13" />
+    </RelativeLayout>
+
+
+    <!--<View-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_below="@+id/re"-->
+    <!--android:background="#666666"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"></View>-->
+
+</LinearLayout>

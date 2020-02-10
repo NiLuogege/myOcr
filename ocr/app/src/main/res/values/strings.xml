@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">实有人口管理</string>
+    <string name="login_name">请输入账号</string>
+    <string name="login_pass">请输入密码</string>
+    <string name="guanyu">我是关于</string>
+    <string name="wangji">我是忘记密码</string>
+    <string name="edname">请输入用户名</string>
+    <string name="edpass">请输入密码</string>
+    <string name="button_log">登录</string>
+    <string name="wangji_pass">忘记密码</string>
+    <string name="guanyu_tv">联系我们</string>
+    <string name="login_name_tv">请输入账号</string>
+    <string name="login_pass_tv">请输入密码</string>
+    <string name="dialog_mess_tv">正在加载...</string>
+    <string name="login_tv">正在登陆</string>
+    <string name="zici">请再次输入密码</string>
+    <string name="cp_open_review_add">添加</string>
+
+    <string name="camera_open_error">相机未正常开启，请重启手机后重试！</string>
+    <string name="camera_indicator">请将身份证放入框内后拍照！</string>
+    <string name="camera_take_picture_error">拍照失败</string>
+
+    <!-- recognize -->
+    <string name="reco_dialog_title">提示</string>
+    <string name="reco_dialog_blur">图像无法识别，请将身份证水平放于框内进行拍摄</string>
+    <string name="reco_dialog_imei">该设备未授权！！！</string>
+    <string name="reco_dialog_cdma">请使用CDMA制式设备</string>
+    <string name="reco_dialog_time_out">引擎已过期！！</string>
+    <string name="reco_dialog_engine_init">引擎初始化失败！！</string>
+    <string name="reco_dialog_fail_copy">请勿使用复印件</string>
+    <string name="reco_dialog_licens">授权失败</string>
+
+    <string name="eChang">服务器异常 检查网络 请稍后再试</string>
+    <string name="xiaZaiEs"> 下载出错 稍后再试</string>
+    <string name="loginE">登录异常</string>
+
+    <string name="Complete">Complete</string>
+    <string name="Error">添加失败</string>
+    <string name="Upload">确 定</string>
+    <string name="XiaZai"> 下载中</string>
+    <string name="ShaoHou"> 连接服务器中</string>
+    <string name="WanCheng"> 下载完成</string>
+    <string name="xiazaiActivity">点击图片下载离线文件</string>
+    <string name="filesize">已下载文件大小</string>
+    <string name="update">长按删除或上传</string>
+    <string name="noupdate">无离线采集记录</string>
+
+    <string name="behavior_sample_title">com.example.ruifight_3.saolouruifight.util.uiutil.SampleTitleBehavior</string>
+    <string name="update_set">已是最新版本</string>
+    <string name="noKaFa">暂未开发 模拟消除红点</string>
+    <string name="dengdai">连接服务器因网络问题可能会慢</string>
+    <string name="xaizaiz">正在下载中 请不要退出</string>
+    <string name="xianchangNo">现场图 (无)</string>
+    <string name="welcome">欢迎流管员</string>
+    <string name="welcomefangzhu">欢迎房主</string>
+    <string name="error">操作失败></string>
+    <string name="ok">删除成功</string>
+    <string name="lixian">离线暂时无法操作</string>
+    <string name="tishi">用户名或密码错误</string>
+    <string name="dowtime">最近下载时间:</string>
+    <string name="uplo">最近上传时间:</string>
+    <string name="grount">· 流管员您在#</string>
+    <string name="wufaData">无法连接服务器</string>
+    <string name="guolv">提示: 设置过滤地址是为了在添加人员的时候 系统自动勾选 户籍类型 (户籍人口.人户分离) 添加身份证地址的关键地址 比如身份证地址(北京市阳坊镇...) 设置过滤的时候 只需要设置 阳坊镇 即可</string>
+    <string name="jzwname">建筑物名称不能为空</string>
+    <string name="dynumber">单元数不能为空</string>
+    <string name="cengnumber">层数不能为空</string>
+    <string name="fwnumber">房屋数不能为空</string>
+    <string name="nowufu">解析服务器意图异常</string>
+
+
+</resources>

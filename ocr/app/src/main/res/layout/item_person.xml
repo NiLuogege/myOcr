@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/per_item_tou"
+            android:layout_width="@dimen/dp_89"
+            android:layout_height="@dimen/dp_95"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/per_item_tou"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/per_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名： 任浩楠"
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/per_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:text="性别： 任浩楠"
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/per_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:text="手机号： 任浩楠"
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/per_idcard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_7"
+                android:text="身份证号： 211382111411295816"
+                android:textColor="@color/colors_font3"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/per_renkou_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/dp_5"
+                android:lineSpacingExtra="@dimen/dp_5"
+                android:text="地址：任浩"
+                android:textColor="@color/colors_font2A"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/danwei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="姓名： 任浩楠"
+                android:textColor="@color/colors_font2A"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="#e5e6e7e8"></View>
+
+
+</LinearLayout>

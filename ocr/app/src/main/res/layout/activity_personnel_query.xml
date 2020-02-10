@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tit2"
+        layout="@layout/base_toobar_layout" />
+
+    <include
+        android:id="@+id/data_base_net"
+        layout="@layout/base_network_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></include>
+
+    <include
+        android:id="@+id/suosuo"
+        layout="@layout/suosuo_layout_per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_per"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_5">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

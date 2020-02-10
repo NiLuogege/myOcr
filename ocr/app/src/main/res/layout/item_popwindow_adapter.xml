@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_250"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ec"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_150"
+        android:background="@drawable/shape_corner">
+
+        <TextView
+            android:id="@+id/guanbi_tv_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_5"
+            android:text="关闭"
+            android:textColor="@color/colors_fontDarkBlue"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/danyuan_tv_a"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+        <LinearLayout
+            android:id="@+id/la2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/danyuan_tv_a"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_weight="1"
+                android:text="修改层号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <EditText
+                android:id="@+id/et_danyuan_ceng_adapter"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/endit_add"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dp_5"
+                android:textColor="@color/blark" />
+
+            <Button
+                android:id="@+id/ceng_button_number"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="确定"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/delete_button_number"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/endit_add"
+            android:text="删除该层" />
+
+        <Button
+            android:id="@+id/hu_commit_bu"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/endit_add"
+            android:text="添加1户数" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

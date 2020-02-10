@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ruifight_3.saolouruifight">
+
+    <!--：如果您的App需要上传到google play store，您需要将READ_PHONE_STATE权限屏蔽掉或者移除，否则可能会被下架。-->
+    <!--权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <!-- 读写SD卡：-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--允许读取wifi网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--获取手机状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 精细定位授权 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--Android8.0需要安装权限-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!--悬浮窗口-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logoapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <!-- 全面屏-->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <!--三方-->
+        <!--百度定位-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pAAjXREZPMCanp1EcmvFpzy0sNG6L9TK"></meta-data>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+        <!--下载离线service  enabled 这个属性用于指示该服务是否能够被实例化。如果设置为true，则能够被实例化，否则不能被实例化。默认值是true。process 这个属性用于设定服务所运行的进程名称 -->
+        <service
+            android:name=".service.DownloaderService"
+            android:enabled="true"></service>
+
+        <!--程序入口-->
+        <activity
+            android:name=".ui.StartupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.CenterAnimation">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <provider
+            android:name=".util.MyFileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 检测网络变化的acton-->
+        <receiver android:name=".receiver.NetWorkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!--登录-->
+        <activity
+            android:name=".ui.LoginHomeActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+
+        <!--首页-->
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--  //主页-->
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- //小区信息页-->
+        <activity
+            android:name=".ui.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--  //修改密码页-->
+        <activity
+            android:name=".ui.UpdatePassActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--  //房屋信息-->
+        <activity
+            android:name=".ui.HouseManageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--房主户主信息页-->
+        <activity
+            android:name=".ui.AddHouseMessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--添加房主信息-->
+        <activity
+            android:name=".ui.AddFangZhuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--添加住户信息-->
+        <activity
+            android:name=".ui.AddUserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--关注任务-->
+        <activity
+            android:name=".ui.AttentionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--处理关注任务-->
+        <activity
+            android:name=".ui.ChuLiAttentionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--已完成任务详情-->
+        <activity
+            android:name=".ui.TaskCompleteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--搜索页面-->
+        <activity
+            android:name=".ui.SouSuoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- 下载数据库文件-->
+        <activity
+            android:name=".ui.XiaZaiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--设置页-->
+        <activity
+            android:name=".ui.SetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--住户查看大图-->
+        <activity
+            android:name=".ui.BigPictureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!--&lt;!&ndash;身份证识别 拍照识别&ndash;&gt;-->
+        <!--<activity android:name=".widget.ACamera"-->
+        <!--android:screenOrientation="landscape"-->
+        <!--&gt;</activity>-->
+
+        <!--<activity android:name=".ui.idcard.ARecognize"-->
+        <!--android:configChanges="orientation|keyboard|keyboardHidden"-->
+        <!--&gt;</activity>-->
+        <!--离线上传页-->
+        <activity
+            android:name=".ui.UploadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--身份证识别 视频动态识别-->
+        <activity
+            android:name=".ui.idcard.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape" />
+
+        <!--图片选择-->
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen" />
+
+        <!--辖区统计-->
+        <activity
+            android:name=".ui.DataStatisticsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--人员查询-->
+        <activity
+            android:name=".ui.PersonnelQueryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!--添加建筑物-->
+        <activity
+            android:name=".ui.AddJzwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--删除记录-->
+        <activity
+            android:name=".ui.DeleteRecordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+    </application>
+</manifest>

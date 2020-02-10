@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/inde"
+        layout="@layout/base_toobar_layout"></include>
+
+
+    <TextView
+        android:id="@+id/time_activity_xaizai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inde"
+        android:padding="@dimen/dp_5"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/rele"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_below="@+id/time_activity_xaizai">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/file" />
+
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/number_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tishi_image"
+            android:layout_alignBottom="@+id/image"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_12"
+            custom:progress_text_color="@color/edit_yes"
+            custom:progress_text_size="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tishi_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/image"
+            android:textColor="@color/colors_font3"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/up_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@color/colors_font3" />
+
+
+        <TextView
+            android:id="@+id/xiazai_mb_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tishi_image"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/image"
+            android:text="@string/filesize"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tishi_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rele"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:textSize="@dimen/sp_12"
+        android:visibility="invisible" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentBottom="true">
+
+
+        <ProgressBar
+            android:id="@+id/progress_neicun"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:progressDrawable="@drawable/progress_bar_drawable" />
+
+
+        <TextView
+            android:id="@+id/neicun_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

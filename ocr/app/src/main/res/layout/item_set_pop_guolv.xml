@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_250"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ec"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_230"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_corner">
+
+        <TextView
+            android:id="@+id/guanbi_tv_count_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_5"
+            android:text="关闭"
+            android:textColor="@color/colors_fontDarkBlue"
+            android:textSize="@dimen/sp_20" />
+
+
+        <LinearLayout
+            android:id="@+id/la1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/guanbi_tv_count_set"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="设置过滤地址"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+
+            <EditText
+                android:id="@+id/et_danyuan_ceng_count_set"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/endit_add"
+                android:hint="输入地址"
+                android:paddingLeft="@dimen/dp_5"
+                android:textColor="@color/blark"
+                android:textSize="@dimen/sp_12" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/delete_button_count_set"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_below="@+id/la1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@drawable/endit_add"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="确定" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delete_button_count_set"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:text="@string/guolv"
+            android:textColor="@color/colors_fontOrange2" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

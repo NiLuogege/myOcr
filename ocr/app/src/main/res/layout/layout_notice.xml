@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/colors_fontWhite">
+
+        <ImageView
+            android:id="@+id/labaimage"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/xiaolaba" />
+
+        <TextView
+            android:id="@+id/tongzhi_tv_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toRightOf="@+id/labaimage"
+            android:textColor="@color/colors_font3"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/tongzhi_tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_toRightOf="@+id/labaimage"
+            android:textColor="@color/colors_font3"
+            android:textSize="@dimen/sp_13" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

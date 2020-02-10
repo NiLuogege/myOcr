@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/delete"
+        layout="@layout/base_toobar_layout"></include>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/delete_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/delete">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/delete_recy_bringinto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colors_fontWhite"
+            android:overScrollMode="never">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/nodata_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="无删除记录"
+        android:textSize="@dimen/sp_15"
+        android:visibility="gone" />
+
+</RelativeLayout>
